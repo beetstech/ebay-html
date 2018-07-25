@@ -465,10 +465,7 @@
         color: #111;
     }
 
-    /*
-     Default styles + Mobile first
-     Offscreen menu style
-    */
+    /* Default styles + Mobile firstOffscreen menu style */
 
     .main-menu {
         position: absolute;
@@ -477,8 +474,7 @@
         height: 100%;
         overflow-y: scroll;
         overflow-x: visible;
-        transition: left 0.3s ease,
-        box-shadow 0.3s ease;
+        transition: left 0.3s ease, box-shadow 0.3s ease;
         z-index: 999;
     }
 
@@ -512,14 +508,9 @@
         top: 0;
     }
 
-    /*
-     On small devices, allow it to toggle...
-    */
+    /* On small devices, allow it to toggle... */
 
-    /*
-     :target for non-JavaScript
-     aria-expanded="true/false" will be for JavaScript
-    */
+    /* :target for non-JavaScriptaria-expanded="true/false" will be for JavaScript */
 
     .main-menu:target,
     .main-menu[aria-expanded="true"] {
@@ -541,10 +532,7 @@
         z-index: 1000;
     }
 
-    /* 
-     We could us `.main-menu:target:after`, but
-     it wouldn't be clickable.
-    */
+    /* We could us `.main-menu:target:after`, butit wouldn't be clickable. */
 
     .main-menu:target+.backdrop,
     .main-menu[aria-expanded="true"]+.backdrop {
@@ -569,17 +557,13 @@
         }
     }
 
-    /*
-     Larger screen styling
-     Horizontal menu
-    */
+    /*Larger screen stylingHorizontal menu*/
 
     @media (min-width: 800px) {
         .menu-toggle,
         .main-menu .menu-close {
             display: none;
         }
-
         /* Undo positioning of off-canvas menu */
         .main-menu {
             position: absolute;
@@ -589,9 +573,7 @@
             height: auto;
             width: 260px;
         }
-
         .main-menu .bts_sidebar-inner {
-
             /* Undo off-canvas styling */
             padding: 0;
             -webkit-box-shadow: none;
@@ -874,108 +856,42 @@
         <div id="bts_outerArea">
             <!-- :::::::::::::::::::::::::::::::::::: store header :::::::::::::::::::::::::::::::::::::::::::::::: -->
             <p class="bts_about-beets">Parts, tools, and supplies from Beetstech. Check out our website for even lower prices and a better shopping experience!</p>
-            <header class="bts_storeNameSlogan">
-                <a href="#main-menu" class="menu-toggle" role="button" id="main-menu-toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Open main menu">
-                    <span class="sr-only">Open main menu</span>
-                    <span class="fa fa-bars" aria-hidden="true">Menu</span>
-                </a>
-                <img src="https://d1tnmg9s85krkf.cloudfront.net/wp-content/uploads/black-white-logo-2.png">
-
-                <nav id="main-menu" class="main-menu" role="navigation" aria-expanded="false" aria-label="Main menu">
-                    <a href="#main-menu-toggle" class="menu-close" role="button" id="main-menu-close" aria-expanded="false" aria-controls="main-menu" aria-label="Close main menu">
-                        <span class="sr-only">Close main menu</span>
-                        <span class="fa fa-close" aria-hidden="true">X</span>
-                    </a>
+            <header class="bts_storeNameSlogan"><a href="#main-menu" class="menu-toggle" role="button" id="main-menu-toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Open main menu"><span class="sr-only">Open main menu</span><span class="fa fa-bars" aria-hidden="true">Menu</span></a><img src="https://mk0beetstechqtgw52p3.kinstacdn.com/wp-content/uploads/black-white-logo-2.png">
+                <nav id="main-menu" class="main-menu" role="navigation" aria-expanded="false" aria-label="Main menu"><a href="#main-menu-toggle" class="menu-close" role="button" id="main-menu-close" aria-expanded="false" aria-controls="main-menu" aria-label="Close main menu"><span class="sr-only">Close main menu</span><span class="fa fa-close" aria-hidden="true">X</span></a>
                     <div class="bts_sidebar-inner bts_font">
                         <!-- categories: -->
-                        <div id="bts_cat">
-                            <a id="bts_cat-title" href="https://stores.ebay.com/Beetstech" title="Visit the Beetstech Store">The Beetstech Store</a>
-                            <div class="bts_store-cat">
-                                <a href="https://stores.ebay.com/beetstech/AirPort-Extreme-Base-Station-/_i.html?_fsub=18141835012" target="_blank">AirPort Extreme Base Station</a>
-                            </div>
-                            <div class="bts_store-cat">
-                                <a href="https://stores.ebay.com/beetstech/AirPort-Time-Capsule-/_i.html?_fsub=18141834012" target="_blank">AirPort Time Capsule</a>
-                            </div>
-                            <div class="bts_store-cat">
-                                <a href="https://stores.ebay.com/beetstech/iMac-21-5-/_i.html?_fsub=11848655012" target="_blank">iMac 21.5"</a>
-                            </div>
-                            <div class="bts_store-cat">
-                                <a href="https://stores.ebay.com/beetstech/iMac-24-/_i.html?_fsub=23656398012" target="_blank">iMac 24"</a>
-                            </div>
-                            <div class="bts_store-cat">
-                                <a href="https://stores.ebay.com/beetstech/iMac-27-/_i.html?_fsub=11443333012" target="_blank">iMac 27"</a>
-                            </div>
-                            <div class="bts_store-cat">
-                                <a href="https://stores.ebay.com/beetstech/Mac-mini-/_i.html?_fsub=11977883012" target="_blank">Mac mini</a>
-                            </div>
-                            <div class="bts_store-cat">
-                                <a href="https://stores.ebay.com/beetstech/Mac-Pro-/_i.html?_fsub=23317652012" target="_blank">Mac Pro</a>
-                            </div>
-                            <div class="bts_store-cat">
-                                <a href="https://stores.ebay.com/beetstech/MacBook-13-/_i.html?_fsub=24118014012" target="_blank">MacBook 13"</a>
-                            </div>
-                            <div class="bts_store-cat">
-                                <a href="https://stores.ebay.com/beetstech/MacBook-Unibody-13-/_i.html?_fsub=3827624012" target="_blank">MacBook Unibody 13"</a>
-                            </div>
-                            <div class="bts_store-cat">
-                                <a href="https://stores.ebay.com/beetstech/MacBook-Retina-12-/_i.html?_fsub=11080379012" target="_blank">MacBook Retina 12"</a>
-                            </div>
-                            <div class="bts_store-cat">
-                                <a href="https://stores.ebay.com/beetstech/MacBook-Air-11-/_i.html?_fsub=3827614012" target="_blank">MacBook Air 11"</a>
-                            </div>
-                            <div class="bts_store-cat">
-                                <a href="https://stores.ebay.com/beetstech/MacBook-Air-13-/_i.html?_fsub=3827615012" target="_blank">MacBook Air 13"</a>
-                            </div>
-                            <div class="bts_store-cat">
-                                <a href="https://stores.ebay.com/beetstech/MacBook-Pro-13-/_i.html?_fsub=25241866012" target="_blank">MacBook Pro 13"</a>
-                            </div>
-                            <div class="bts_store-cat">
-                                <a href="https://stores.ebay.com/beetstech/MacBook-Pro-15-/_i.html?_fsub=25241867012" target="_blank">MacBook Pro 15"</a>
-                            </div>
-                            <div class="bts_store-cat">
-                                <a href="https://stores.ebay.com/beetstech/MacBook-Pro-Unibody-13-/_i.html?_fsub=4616689012" target="_blank">MacBook Pro Unibody 13"</a>
-                            </div>
-                            <div class="bts_store-cat">
-                                <a href="https://stores.ebay.com/beetstech/MacBook-Pro-Unibody-15-/_i.html?_fsub=3827612012" target="_blank">MacBook Pro Unibody 15"</a>
-                            </div>
-                            <div class="bts_store-cat">
-                                <a href="https://stores.ebay.com/beetstech/MacBook-Pro-Unibody-17-/_i.html?_fsub=3827613012" target="_blank">MacBook Pro Unibody 17"</a>
-                            </div>
-                            <div class="bts_store-cat">
-                                <a href="https://stores.ebay.com/beetstech/MacBook-Pro-Retina-13-/_i.html?_fsub=8902500012" target="_blank">MacBook Pro Retina 13"</a>
-                            </div>
-                            <div class="bts_store-cat">
-                                <a href="https://stores.ebay.com/beetstech/MacBook-Pro-Retina-15-/_i.html?_fsub=25230488012" target="_blank">MacBook Pro Retina 15"</a>
-                            </div>
-                            <div class="bts_store-cat">
-                                <a href="https://stores.ebay.com/beetstech/Cinema-and-Thunderbolt-Display-/_i.html?_fsub=24573048012" target="_blank">Cinema and Thunderbolt Display</a>
-                            </div>
-                            <div class="bts_store-cat">
-                                <a href="https://stores.ebay.com/beetstech/Hard-Drives-and-SSDs-/_i.html?_fsub=25241868012" target="_blank">Hard Drives and SSDs</a>
-                            </div>
-                            <div class="bts_store-cat">
-                                <a href="https://stores.ebay.com/beetstech/Memory-RAM-/_i.html?_fsub=4322568012" target="_blank">Memory (RAM)</a>
-                            </div>
-                            <div class="bts_store-cat">
-                                <a href="https://stores.ebay.com/beetstech/Optical-Drives-/_i.html?_fsub=4322567012" target="_blank">Optical Drives</a>
-                            </div>
-                            <div class="bts_store-cat">
-                                <a href="https://stores.ebay.com/beetstech/Power-Adapters-and-Cords-/_i.html?_fsub=4616693012" target="_blank">Power Adapters and Cords</a>
-                            </div>
-                            <div class="bts_store-cat">
-                                <a href="https://stores.ebay.com/beetstech/Accessories-/_i.html?_fsub=25241869012" target="_blank">Accessories</a>
-                            </div>
-                            <div class="bts_store-cat">
-                                <a href="https://stores.ebay.com/beetstech/Tools-/_i.html?_fsub=24118106012" target="_blank">Tools</a>
-                            </div>
-                            <div class="bts_store-cat">
-                                <a href="https://stores.ebay.com/beetstech/Supplies-/_i.html?_fsub=24118107012" target="_blank">Supplies</a>
-                            </div>
+                        <div id="bts_cat"><a id="bts_cat-title" href="https://stores.ebay.com/Beetstech" title="Visit the Beetstech Store">The Beetstech Store</a>
+                            <div class="bts_store-cat"><a href="https://stores.ebay.com/beetstech/AirPort-Extreme-Base-Station-/_i.html?_fsub=18141835012" target="_blank">AirPort Extreme Base Station</a></div>
+                            <div class="bts_store-cat"><a href="https://stores.ebay.com/beetstech/AirPort-Time-Capsule-/_i.html?_fsub=18141834012" target="_blank">AirPort Time Capsule</a></div>
+                            <div class="bts_store-cat"><a href="https://stores.ebay.com/beetstech/iMac-21-5-/_i.html?_fsub=11848655012" target="_blank">iMac 21.5"</a></div>
+                            <div class="bts_store-cat"><a href="https://stores.ebay.com/beetstech/iMac-24-/_i.html?_fsub=23656398012" target="_blank">iMac 24"</a></div>
+                            <div class="bts_store-cat"><a href="https://stores.ebay.com/beetstech/iMac-27-/_i.html?_fsub=11443333012" target="_blank">iMac 27"</a></div>
+                            <div class="bts_store-cat"><a href="https://stores.ebay.com/beetstech/Mac-mini-/_i.html?_fsub=11977883012" target="_blank">Mac mini</a></div>
+                            <div class="bts_store-cat"><a href="https://stores.ebay.com/beetstech/Mac-Pro-/_i.html?_fsub=23317652012" target="_blank">Mac Pro</a></div>
+                            <div class="bts_store-cat"><a href="https://stores.ebay.com/beetstech/MacBook-13-/_i.html?_fsub=24118014012" target="_blank">MacBook 13"</a></div>
+                            <div class="bts_store-cat"><a href="https://stores.ebay.com/beetstech/MacBook-Unibody-13-/_i.html?_fsub=3827624012" target="_blank">MacBook Unibody 13"</a></div>
+                            <div class="bts_store-cat"><a href="https://stores.ebay.com/beetstech/MacBook-Retina-12-/_i.html?_fsub=11080379012" target="_blank">MacBook Retina 12"</a></div>
+                            <div class="bts_store-cat"><a href="https://stores.ebay.com/beetstech/MacBook-Air-11-/_i.html?_fsub=3827614012" target="_blank">MacBook Air 11"</a></div>
+                            <div class="bts_store-cat"><a href="https://stores.ebay.com/beetstech/MacBook-Air-13-/_i.html?_fsub=3827615012" target="_blank">MacBook Air 13"</a></div>
+                            <div class="bts_store-cat"><a href="https://stores.ebay.com/beetstech/MacBook-Pro-13-/_i.html?_fsub=25241866012" target="_blank">MacBook Pro 13"</a></div>
+                            <div class="bts_store-cat"><a href="https://stores.ebay.com/beetstech/MacBook-Pro-15-/_i.html?_fsub=25241867012" target="_blank">MacBook Pro 15"</a></div>
+                            <div class="bts_store-cat"><a href="https://stores.ebay.com/beetstech/MacBook-Pro-Unibody-13-/_i.html?_fsub=4616689012" target="_blank">MacBook Pro Unibody 13"</a></div>
+                            <div class="bts_store-cat"><a href="https://stores.ebay.com/beetstech/MacBook-Pro-Unibody-15-/_i.html?_fsub=3827612012" target="_blank">MacBook Pro Unibody 15"</a></div>
+                            <div class="bts_store-cat"><a href="https://stores.ebay.com/beetstech/MacBook-Pro-Unibody-17-/_i.html?_fsub=3827613012" target="_blank">MacBook Pro Unibody 17"</a></div>
+                            <div class="bts_store-cat"><a href="https://stores.ebay.com/beetstech/MacBook-Pro-Retina-13-/_i.html?_fsub=8902500012" target="_blank">MacBook Pro Retina 13"</a></div>
+                            <div class="bts_store-cat"><a href="https://stores.ebay.com/beetstech/MacBook-Pro-Retina-15-/_i.html?_fsub=25230488012" target="_blank">MacBook Pro Retina 15"</a></div>
+                            <div class="bts_store-cat"><a href="https://stores.ebay.com/beetstech/Cinema-and-Thunderbolt-Display-/_i.html?_fsub=24573048012" target="_blank">Cinema and Thunderbolt Display</a></div>
+                            <div class="bts_store-cat"><a href="https://stores.ebay.com/beetstech/Hard-Drives-and-SSDs-/_i.html?_fsub=25241868012" target="_blank">Hard Drives and SSDs</a></div>
+                            <div class="bts_store-cat"><a href="https://stores.ebay.com/beetstech/Memory-RAM-/_i.html?_fsub=4322568012" target="_blank">Memory (RAM)</a></div>
+                            <div class="bts_store-cat"><a href="https://stores.ebay.com/beetstech/Optical-Drives-/_i.html?_fsub=4322567012" target="_blank">Optical Drives</a></div>
+                            <div class="bts_store-cat"><a href="https://stores.ebay.com/beetstech/Power-Adapters-and-Cords-/_i.html?_fsub=4616693012" target="_blank">Power Adapters and Cords</a></div>
+                            <div class="bts_store-cat"><a href="https://stores.ebay.com/beetstech/Accessories-/_i.html?_fsub=25241869012" target="_blank">Accessories</a></div>
+                            <div class="bts_store-cat"><a href="https://stores.ebay.com/beetstech/Tools-/_i.html?_fsub=24118106012" target="_blank">Tools</a></div>
+                            <div class="bts_store-cat"><a href="https://stores.ebay.com/beetstech/Supplies-/_i.html?_fsub=24118107012" target="_blank">Supplies</a></div>
                         </div>
                         <!-- /categories: -->
                         <div id="bts_sidebarInfoBoxes">
-                            <div id="bts_SBinfoBox4" class="bts_SBinfoBox">
-                                <a class="bts_SBinfoBoxTitle"><span>PLEASE  VERIFY  MODEL</span></a>
+                            <div id="bts_SBinfoBox4" class="bts_SBinfoBox"><a class="bts_SBinfoBoxTitle"><span>PLEASE  VERIFY  MODEL</span></a>
                                 <div class="bts_SBinfoBoxText">To guarantee compatibility with your Apple device, you <b>must</b> match one of the following with our compatibility section:
                                     <ul class="show">
                                         <li><b>Model Identifier</b><br><i>(e.g. MacBookPro8,1)</i></li> or
@@ -994,98 +910,41 @@
                             </div>
                         </div>
                     </div>
-                </nav>
-                <a href="#main-menu-toggle" class="backdrop" tabindex="-1" aria-hidden="true" hidden></a>
-            </header>
+                </nav><a href="#main-menu-toggle" class="backdrop" tabindex="-1" aria-hidden="true" hidden=""></a></header>
             <!-- :::::::::::::::::::::::::::::::::::: MAIN CONTENT ::::::::::::::::::::::::::::::::::::::::::::: -->
-
             <div id="bts_main-content">
                 <div id="bts_main-content-inner">
                     <section class="bts_sidebar-outer">
                         <div class="bts_sidebar-inner bts_font">
-                        <!-- categories: -->
-                        <div id="bts_cat">
-                            <a id="bts_cat-title" href="https://stores.ebay.com/Beetstech" title="Visit the Beetstech Store">The Beetstech Store</a>
-                            <div class="bts_store-cat">
-                                <a href="https://stores.ebay.com/beetstech/AirPort-Extreme-Base-Station-/_i.html?_fsub=18141835012" target="_blank">AirPort Extreme Base Station</a>
-                            </div>
-                            <div class="bts_store-cat">
-                                <a href="https://stores.ebay.com/beetstech/AirPort-Time-Capsule-/_i.html?_fsub=18141834012" target="_blank">AirPort Time Capsule</a>
-                            </div>
-                            <div class="bts_store-cat">
-                                <a href="https://stores.ebay.com/beetstech/iMac-21-5-/_i.html?_fsub=11848655012" target="_blank">iMac 21.5"</a>
-                            </div>
-                            <div class="bts_store-cat">
-                                <a href="https://stores.ebay.com/beetstech/iMac-24-/_i.html?_fsub=23656398012" target="_blank">iMac 24"</a>
-                            </div>
-                            <div class="bts_store-cat">
-                                <a href="https://stores.ebay.com/beetstech/iMac-27-/_i.html?_fsub=11443333012" target="_blank">iMac 27"</a>
-                            </div>
-                            <div class="bts_store-cat">
-                                <a href="https://stores.ebay.com/beetstech/Mac-mini-/_i.html?_fsub=11977883012" target="_blank">Mac mini</a>
-                            </div>
-                            <div class="bts_store-cat">
-                                <a href="https://stores.ebay.com/beetstech/Mac-Pro-/_i.html?_fsub=23317652012" target="_blank">Mac Pro</a>
-                            </div>
-                            <div class="bts_store-cat">
-                                <a href="https://stores.ebay.com/beetstech/MacBook-13-/_i.html?_fsub=24118014012" target="_blank">MacBook 13"</a>
-                            </div>
-                            <div class="bts_store-cat">
-                                <a href="https://stores.ebay.com/beetstech/MacBook-Unibody-13-/_i.html?_fsub=3827624012" target="_blank">MacBook Unibody 13"</a>
-                            </div>
-                            <div class="bts_store-cat">
-                                <a href="https://stores.ebay.com/beetstech/MacBook-Retina-12-/_i.html?_fsub=11080379012" target="_blank">MacBook Retina 12"</a>
-                            </div>
-                            <div class="bts_store-cat">
-                                <a href="https://stores.ebay.com/beetstech/MacBook-Air-11-/_i.html?_fsub=3827614012" target="_blank">MacBook Air 11"</a>
-                            </div>
-                            <div class="bts_store-cat">
-                                <a href="https://stores.ebay.com/beetstech/MacBook-Air-13-/_i.html?_fsub=3827615012" target="_blank">MacBook Air 13"</a>
-                            </div>
-                            <div class="bts_store-cat">
-                                <a href="https://stores.ebay.com/beetstech/MacBook-Pro-13-/_i.html?_fsub=25241866012" target="_blank">MacBook Pro 13"</a>
-                            </div>
-                            <div class="bts_store-cat">
-                                <a href="https://stores.ebay.com/beetstech/MacBook-Pro-15-/_i.html?_fsub=25241867012" target="_blank">MacBook Pro 15"</a>
-                            </div>
-                            <div class="bts_store-cat">
-                                <a href="https://stores.ebay.com/beetstech/MacBook-Pro-Unibody-13-/_i.html?_fsub=4616689012" target="_blank">MacBook Pro Unibody 13"</a>
-                            </div>
-                            <div class="bts_store-cat">
-                                <a href="https://stores.ebay.com/beetstech/MacBook-Pro-Unibody-15-/_i.html?_fsub=3827612012" target="_blank">MacBook Pro Unibody 15"</a>
-                            </div>
-                            <div class="bts_store-cat">
-                                <a href="https://stores.ebay.com/beetstech/MacBook-Pro-Unibody-17-/_i.html?_fsub=3827613012" target="_blank">MacBook Pro Unibody 17"</a>
-                            </div>
-                            <div class="bts_store-cat">
-                                <a href="https://stores.ebay.com/beetstech/MacBook-Pro-Retina-13-/_i.html?_fsub=8902500012" target="_blank">MacBook Pro Retina 13"</a>
-                            </div>
-                            <div class="bts_store-cat">
-                                <a href="https://stores.ebay.com/beetstech/MacBook-Pro-Retina-15-/_i.html?_fsub=25230488012" target="_blank">MacBook Pro Retina 15"</a>
-                            </div>
-                            <div class="bts_store-cat">
-                                <a href="https://stores.ebay.com/beetstech/Cinema-and-Thunderbolt-Display-/_i.html?_fsub=24573048012" target="_blank">Cinema and Thunderbolt Display</a>
-                            </div>
-                            <div class="bts_store-cat">
-                                <a href="https://stores.ebay.com/beetstech/Hard-Drives-and-SSDs-/_i.html?_fsub=25241868012" target="_blank">Hard Drives and SSDs</a>
-                            </div>
-                            <div class="bts_store-cat">
-                                <a href="https://stores.ebay.com/beetstech/Memory-RAM-/_i.html?_fsub=4322568012" target="_blank">Memory (RAM)</a>
-                            </div>
-                            <div class="bts_store-cat">
-                                <a href="https://stores.ebay.com/beetstech/Optical-Drives-/_i.html?_fsub=4322567012" target="_blank">Optical Drives</a>
-                            </div>
-                            <div class="bts_store-cat">
-                                <a href="https://stores.ebay.com/beetstech/Power-Adapters-and-Cords-/_i.html?_fsub=4616693012" target="_blank">Power Adapters and Cords</a>
-                            </div>
-                            <div class="bts_store-cat">
-                                <a href="https://stores.ebay.com/beetstech/Accessories-/_i.html?_fsub=25241869012" target="_blank">Accessories</a>
-                            </div>
-                            <div class="bts_store-cat">
-                                <a href="https://stores.ebay.com/beetstech/Tools-/_i.html?_fsub=24118106012" target="_blank">Tools</a>
-                            </div>
-                            <div class="bts_store-cat">
-                                <a href="https://stores.ebay.com/beetstech/Supplies-/_i.html?_fsub=24118107012" target="_blank">Supplies</a>
+                            <!-- categories: -->
+                            <div id="bts_cat"><a id="bts_cat-title" href="https://stores.ebay.com/Beetstech" title="Visit the Beetstech Store">The Beetstech Store</a>
+                                <div class="bts_store-cat"><a href="https://stores.ebay.com/beetstech/AirPort-Extreme-Base-Station-/_i.html?_fsub=18141835012" target="_blank">AirPort Extreme Base Station</a></div>
+                                <div class="bts_store-cat"><a href="https://stores.ebay.com/beetstech/AirPort-Time-Capsule-/_i.html?_fsub=18141834012" target="_blank">AirPort Time Capsule</a></div>
+                                <div class="bts_store-cat"><a href="https://stores.ebay.com/beetstech/iMac-21-5-/_i.html?_fsub=11848655012" target="_blank">iMac 21.5"</a></div>
+                                <div class="bts_store-cat"><a href="https://stores.ebay.com/beetstech/iMac-24-/_i.html?_fsub=23656398012" target="_blank">iMac 24"</a></div>
+                                <div class="bts_store-cat"><a href="https://stores.ebay.com/beetstech/iMac-27-/_i.html?_fsub=11443333012" target="_blank">iMac 27"</a></div>
+                                <div class="bts_store-cat"><a href="https://stores.ebay.com/beetstech/Mac-mini-/_i.html?_fsub=11977883012" target="_blank">Mac mini</a></div>
+                                <div class="bts_store-cat"><a href="https://stores.ebay.com/beetstech/Mac-Pro-/_i.html?_fsub=23317652012" target="_blank">Mac Pro</a></div>
+                                <div class="bts_store-cat"><a href="https://stores.ebay.com/beetstech/MacBook-13-/_i.html?_fsub=24118014012" target="_blank">MacBook 13"</a></div>
+                                <div class="bts_store-cat"><a href="https://stores.ebay.com/beetstech/MacBook-Unibody-13-/_i.html?_fsub=3827624012" target="_blank">MacBook Unibody 13"</a></div>
+                                <div class="bts_store-cat"><a href="https://stores.ebay.com/beetstech/MacBook-Retina-12-/_i.html?_fsub=11080379012" target="_blank">MacBook Retina 12"</a></div>
+                                <div class="bts_store-cat"><a href="https://stores.ebay.com/beetstech/MacBook-Air-11-/_i.html?_fsub=3827614012" target="_blank">MacBook Air 11"</a></div>
+                                <div class="bts_store-cat"><a href="https://stores.ebay.com/beetstech/MacBook-Air-13-/_i.html?_fsub=3827615012" target="_blank">MacBook Air 13"</a></div>
+                                <div class="bts_store-cat"><a href="https://stores.ebay.com/beetstech/MacBook-Pro-13-/_i.html?_fsub=25241866012" target="_blank">MacBook Pro 13"</a></div>
+                                <div class="bts_store-cat"><a href="https://stores.ebay.com/beetstech/MacBook-Pro-15-/_i.html?_fsub=25241867012" target="_blank">MacBook Pro 15"</a></div>
+                                <div class="bts_store-cat"><a href="https://stores.ebay.com/beetstech/MacBook-Pro-Unibody-13-/_i.html?_fsub=4616689012" target="_blank">MacBook Pro Unibody 13"</a></div>
+                                <div class="bts_store-cat"><a href="https://stores.ebay.com/beetstech/MacBook-Pro-Unibody-15-/_i.html?_fsub=3827612012" target="_blank">MacBook Pro Unibody 15"</a></div>
+                                <div class="bts_store-cat"><a href="https://stores.ebay.com/beetstech/MacBook-Pro-Unibody-17-/_i.html?_fsub=3827613012" target="_blank">MacBook Pro Unibody 17"</a></div>
+                                <div class="bts_store-cat"><a href="https://stores.ebay.com/beetstech/MacBook-Pro-Retina-13-/_i.html?_fsub=8902500012" target="_blank">MacBook Pro Retina 13"</a></div>
+                                <div class="bts_store-cat"><a href="https://stores.ebay.com/beetstech/MacBook-Pro-Retina-15-/_i.html?_fsub=25230488012" target="_blank">MacBook Pro Retina 15"</a></div>
+                                <div class="bts_store-cat"><a href="https://stores.ebay.com/beetstech/Cinema-and-Thunderbolt-Display-/_i.html?_fsub=24573048012" target="_blank">Cinema and Thunderbolt Display</a></div>
+                                <div class="bts_store-cat"><a href="https://stores.ebay.com/beetstech/Hard-Drives-and-SSDs-/_i.html?_fsub=25241868012" target="_blank">Hard Drives and SSDs</a></div>
+                                <div class="bts_store-cat"><a href="https://stores.ebay.com/beetstech/Memory-RAM-/_i.html?_fsub=4322568012" target="_blank">Memory (RAM)</a></div>
+                                <div class="bts_store-cat"><a href="https://stores.ebay.com/beetstech/Optical-Drives-/_i.html?_fsub=4322567012" target="_blank">Optical Drives</a></div>
+                                <div class="bts_store-cat"><a href="https://stores.ebay.com/beetstech/Power-Adapters-and-Cords-/_i.html?_fsub=4616693012" target="_blank">Power Adapters and Cords</a></div>
+                                <div class="bts_store-cat"><a href="https://stores.ebay.com/beetstech/Accessories-/_i.html?_fsub=25241869012" target="_blank">Accessories</a></div>
+                                <div class="bts_store-cat"><a href="https://stores.ebay.com/beetstech/Tools-/_i.html?_fsub=24118106012" target="_blank">Tools</a></div>
+                                <div class="bts_store-cat"><a href="https://stores.ebay.com/beetstech/Supplies-/_i.html?_fsub=24118107012" target="_blank">Supplies</a></div>
                             </div>
                         </div>
                     </section>
