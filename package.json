@@ -4,19 +4,21 @@
   "description": "HTML template for the eBay product descriptions",
   "main": "index.js",
   "scripts": {
-    "minify": "uglifycss style.css > style.css.min"
+      "html_min": "html-minifier --collapse-whitespace description-template.html -o description-template-min.html",
+      "minify": "uglifycss style.css > style.css.min"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/beetstech/ebay-html.git"
+      "type": "git",
+      "url": "git+https://github.com/beetstech/ebay-html.git"
   },
   "author": "Cody Henderson",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/beetstech/ebay-html/issues"
+      "url": "https://github.com/beetstech/ebay-html/issues"
   },
   "homepage": "https://github.com/beetstech/ebay-html#readme",
   "dependencies": {
-    "uglifycss": "0.0.29"
+      "html-minifier": "^3.5.19",
+      "uglifycss": "0.0.29"
   }
 }
