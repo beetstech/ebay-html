@@ -799,7 +799,7 @@ header {
         top: 0;
     }
     #bts_main-content {
-        top: 96px;
+        margin-top: 96px;
     }
     .bts_sidebar-outer {
         display: none!important;
