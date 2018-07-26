@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/beetstech/ebay-html/issues"
   },
-  "homepage": "https://github.com/beetstech/ebay-html#readme"
+  "homepage": "https://github.com/beetstech/ebay-html#readme",
+  "dependencies": {
+    "uglifycss": "0.0.29"
+  }
 }
