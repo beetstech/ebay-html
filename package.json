@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
       "html_min": "html-minifier --collapse-whitespace description-template.html -o description-template-min.html",
-      "minify": "uglifycss style.css > style.css.min"
+      "minify": "uglifycss style.css > style-min.css"
   },
   "repository": {
       "type": "git",
